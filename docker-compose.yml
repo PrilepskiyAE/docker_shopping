@@ -1,14 +1,14 @@
 version: '3.1'
 
 services: 
-#  web:
-#    image: openjdk:17-alpine
-#    restart: always
-#    ports:
-#      - "80:8080"
-#    volumes:
-#      - "./app.jar:/app.jar"
-#    command: ['java', '-jar', '/app.jar'] 
+  web:
+    image: openjdk:17-alpine
+    restart: always
+    ports:
+      - "80:8080"
+    volumes:
+      - "./app.jar:/app.jar"
+    command: ['java', '-jar', '/app.jar'] 
   mongodb:
     image: mongo:latest
     environment:

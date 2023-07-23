@@ -7,3 +7,5 @@ service
 
 COMMAND START SERVICE 
 docker-compose up -d
+COMMAND CONNECT SERVICE
+docker exec -it [container_id] mongosh
